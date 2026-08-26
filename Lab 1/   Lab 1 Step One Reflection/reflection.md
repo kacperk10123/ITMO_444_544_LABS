@@ -1,0 +1,9 @@
+One paragraph reflecting on why root user MFA and least-privilege IAM users matter for cloud security.
+
+Root is basically the master key to your whole AWS account. If someone gets into it, they can see everything, spend money, or delete resources with almost nothing stopping them. 
+Turning on MFA means stealing a password isn’t enough. The attacker also needs your phone or authenticator app, which makes the attackers’ life much harder. 
+That's why we are told to lock the root account down with MFA and then basically stop using it for daily work. 
+You then create individual IAM users with only the permissions they actually need. This is called the principle of least privilege. 
+If one of those limited accounts gets compromised, the damage is contained because it can't touch things outside its permissions. 
+This also makes it easier to track who did what, since each person or service has its own identity instead of everyone sharing one powerful login. MFA and least privilege reduce both the odds of a breach and how bad it would be if one actually happened. 
+It's a small and simple habit, but it's one of the biggest differences between a secure setup and an easy target.
