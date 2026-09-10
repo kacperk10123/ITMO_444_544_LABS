@@ -1,0 +1,8 @@
+Why environment files are excluded from Git, even in a “private” repository.
+
+Even a private repository isn't truly guaranteed to stay private forever. This is because collaborators get added, repos get transferred, forks happen, or a repo intended to stay private can accidentally be flipped to public with a single wrong click. 
+Also, anyone with legitimate access to the repo would be able to see values in a .env file that they dont need to see, such as AMI IDs, security group IDs, or actual credentials in a production setting. 
+Git also keeps a full history of every commit, so even if a .env file is deleted later, its contents remain recoverable from earlier commits unless the entire history is rewritten.
+Automated bots constantly search through GitHub. Even if they mostly target public repos, that risk grows the moment a repo's visibility changes or is misconfigured. 
+Separating configuration from code also just makes the project more portable. Anyone cloning the repo should be able to supply their own .env based on a template. Instead of inheriting someone else's specific AWS resources. 
+Overall, the .env.example file matters a lot. It matters because it documents what variables are needed without exposing the actual values behind them. 
