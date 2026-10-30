@@ -1,4 +1,4 @@
-# Lab 06: Written Answers
+# Weather_Advisor_TwoTier_APIs Written Answers
 
 ### Part A
 The weather service makes two upstream calls, a zip lookup that turns the zip into coordinates and then the NWS forecast, because NWS only accepts latitude and longitude, never zip codes.
