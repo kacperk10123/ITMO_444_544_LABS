@@ -3,7 +3,7 @@
 I rebuilt the lab06 weather advisor stack (two tiers, one ALB, two Auto Scaling Groups, DynamoDB, IAM roles, and a Gemini key in Parameter Store) in about 430 lines of Terraform, with no delete script. Then I changed it, broke it on purpose, and destroyed it with one command.
 
 ## AI use
-Claude walked me through any troubleshooting I had in this lab step by step. I ran every command myself, captured every screenshot, read every plan and fixed the problems listed below. I created the Gemini key in my own personal Google account.
+Claude walked me through any troubleshooting I had in this lab step by step. It also helped me format this lab report so it's more readable. I ran every command myself, captured every screenshot, read every plan and fixed the problems listed below. I created the Gemini key in my own personal Google account.
 
 ## Learning objectives
 - Explain imperative code (my bash scripts) and declarative code (Terraform), and what each is best at.
