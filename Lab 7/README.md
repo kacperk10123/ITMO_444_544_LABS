@@ -117,7 +117,7 @@ With a design where users never see an error, the only evidence of a broken key 
 12. **Destroy:** I would protect anything holding data that can't be recreated: databases, S3 buckets with data, DynamoDB tables with real data, encryption keys, and the bucket that holds the state. `lifecycle { prevent_destroy = true }` makes any plan that would destroy them fail with an error.
 ## Step 10: Destroy
  
-The stack started at about 12:02 local time (18:02 UTC). I ran `terraform destroy` at 13:13 local time (19:13:57 UTC) and it finished at 13:20 (19:20:40 UTC). The destroy plan said `Plan: 0 to add, 0 to change, 25 to destroy.` and the result was `Destroy complete! Resources: 25 destroyed.` It took 6 minutes 43 seconds, and almost all of that was the two Auto Scaling Groups, which took 6 minutes 5 seconds because they wait for their instances to terminate. This one command replaced my 121 line delete script.
+The stack started at about 12:02 local time (18:02 UTC). I ran `terraform destroy` at 13:13 local time and it finished at 13:20. The destroy plan said `Plan: 0 to add, 0 to change, 25 to destroy.` and the result was `Destroy complete! Resources: 25 destroyed.` It took 6 minutes 43 seconds, and almost all of that was the two Auto Scaling Groups, which took 6 minutes 5 seconds because they wait for their instances to terminate. This one command replaced my 121 line delete script.
  
 The stack ran for about 1 hour 19 minutes (1.3 hours). At about $0.07 an hour, my cost estimate is about 9 cents ($0.09).
  
