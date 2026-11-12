@@ -144,21 +144,3 @@ S3 answers `AccessDenied` for a missing key when the caller cannot list the buck
 
 I ran `./delete_app_stack.sh`, then `cleanup_project.sh` (deletes the SNS topic, the SSM parameter and my extra `sns-filter-policy` inline policy). The final listings of SNS topics, SSM parameters, load balancers, Auto Scaling Groups, instances, buckets and roles were empty (screenshot `15_cleanup_proof.png`). I also deleted the Gemini API key in Google AI Studio. TODO: confirm this section is true after your final run.
 
-
-## 11. Screenshot index
-
-| Checkmark | Files |
-|---|---|
-| 1 | `01_ls_a.png` |
-| 2 | `02a_uploader_13pass.png`, `02b_viewer_13pass.png`, `02c_failing_test.png` |
-| 3 | `03_change_list.png` |
-| 4 | `04a_policies_readback.png`, `04b_iam_table.png` |
-| 5 | `05_userdata_bytes.png` |
-| 7 | `07_ssm_securestring.png` |
-| 8 | `08a_pending.png`, `08b_confirmed.png` |
-| 9 | `09a_b5_table`, `09b_inbox_only_match.png` |
-| 10 | `10a_presigned_works.png`, `10b_presigned_expired.png` |
-| 11 | `11a_test1_resume_page.png`, `11b_test2_docx_in_word.png`, `11c_test4_confirm_message.png`, `11d_test5_sent_message.png` |
-| 13 | `13a` to `13f` |
-| 14 | `14a_viewer_down.png`, `14b_viewer_back.png`, `14c_new_instance.png` |
-| 15 | `15_cleanup_proof.png` |
