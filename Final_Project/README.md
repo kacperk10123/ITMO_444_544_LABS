@@ -64,7 +64,7 @@ Every action is tied to a line in `app.js` in `iam_table.md`. The list of change
 | 11 | `not-an-email` was refused: 400 "Please enter a valid email address." A valid address with capital letters worked: 200 "Sent." and the address was shown in lowercase. |
 | 12 | `/resume/0000000000000000000000000000000f` returned 404 "That resume does not exist or has expired." |
 
-**Logs never contain resume text:** TODO: write the result of the log check (the count of resume words found in the uploader and viewer logs; expected 0 and 0).
+**Logs never contain resume text:** I searched the uploader and viewer logs for words from the sample resume ("Ada Student" and "Acme Corp") and found 0 matching lines in each.
 
 ## 5. Break it on purpose (F2)
 
